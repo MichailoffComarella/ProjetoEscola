@@ -1,16 +1,15 @@
 package com.example.demo.model;
 
+import lombok.Data;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 @Entity
 @Getter
 @NoArgsConstructor
+@Data
 public class Programa {
 
     @Id
@@ -20,9 +19,12 @@ public class Programa {
     private String nome;
     private String ano;
 
-    public Programa(Long id, String name, String ano) {
-        this.id = id;
+    @Column
+    private Boolean active;
+
+    public Programa(String nome, String ano, Boolean active) {
         this.nome = nome;
         this.ano = ano;
+        this.active = active;
     }
 }

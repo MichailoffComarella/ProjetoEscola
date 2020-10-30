@@ -19,11 +19,12 @@ public class AlunoDTO {
 
 
     public Aluno alunoObjeto() {
-        return new Aluno(this.getNome(), this.getClasse(), this.getCPF(), this.getIdade(), this.getPais(), this.getActive());
+        return new Aluno(this.getNome(), this.getClasse(), this.getCPF(), this.getIdade(),
+                this.getPais(), this.getActive());
     }
 
     public static AlunoDTO alunoDTO(Aluno aluno) {
-        return new AlunoDTO(aluno.getId(), aluno.getNome(), aluno.getCPF(), aluno.getClasse(), aluno.getIdade(),
-                aluno.getPais(), aluno.getActive());
+        return new AlunoDTO(aluno.getId(), aluno.getNome(), aluno.getCPF(), aluno.getClasse(),
+                aluno.getIdade(), aluno.getPais(), aluno.getActive());
     }
 }

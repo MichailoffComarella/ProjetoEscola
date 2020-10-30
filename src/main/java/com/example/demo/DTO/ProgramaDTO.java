@@ -12,12 +12,13 @@ public class ProgramaDTO {
     private Long id;
     private String nome;
     private String ano;
+    private Boolean active;
 
     public Programa programaObjeto() {
-        return new Programa(id, nome, ano);
+        return new Programa(this.getNome(), this.getAno(), this.getActive());
     }
 
     public static ProgramaDTO programaDTO(Programa programa) {
-        return new ProgramaDTO(programa.getId(), programa.getAno(), programa.getNome());
+        return new ProgramaDTO(programa.getId(), programa.getNome(), programa.getAno(), programa.getActive());
     }
 }

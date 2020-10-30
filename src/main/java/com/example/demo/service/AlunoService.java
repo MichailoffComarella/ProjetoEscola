@@ -71,7 +71,9 @@ public class AlunoService {
 
     public AlunoDTO getAlunoByIndex(Long id) {
         Aluno aluno = alunoRepository.findById(id).orElse(null);
+
         AlunoDTO alunoDTO = new AlunoDTO();
+
         alunoDTO.setId(aluno.getId());
         alunoDTO.setClasse(aluno.getClasse());
         alunoDTO.setNome(aluno.getNome());

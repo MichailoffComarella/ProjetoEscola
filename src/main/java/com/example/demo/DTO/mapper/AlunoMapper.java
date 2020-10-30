@@ -8,7 +8,7 @@ public class AlunoMapper {
     public static Aluno toAluno(AlunoDTO alunoDTO) {
         Aluno aluno = new Aluno(alunoDTO.getNome(), alunoDTO.getCPF(), alunoDTO.getClasse(), alunoDTO.getIdade(), alunoDTO.getPais(), alunoDTO.getActive());
         aluno.setId(alunoDTO.getId());
-        aluno.setActive(aluno.getActive());
+        aluno.setActive(alunoDTO.getActive());
 
         return aluno;
     }
