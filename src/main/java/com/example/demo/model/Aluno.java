@@ -4,6 +4,7 @@ import com.example.demo.DTO.AlunoDTO;
 import lombok.Data;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import javax.persistence.*;
 
@@ -21,6 +22,7 @@ public class Aluno {
     private String classe;
     private int idade;
     private String pais;
+
 
     @Column
     private Boolean active;

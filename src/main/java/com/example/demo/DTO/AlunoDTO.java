@@ -1,6 +1,7 @@
 package com.example.demo.DTO;
 
 import com.example.demo.model.Aluno;
+import com.example.demo.model.Mentor;
 import lombok.*;
 
 @AllArgsConstructor

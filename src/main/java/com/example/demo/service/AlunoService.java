@@ -82,7 +82,6 @@ public class AlunoService {
         alunoDTO.setPais(aluno.getPais());
         alunoDTO.setActive(aluno.getActive());
 
-        //alunoDTO.setMentorName(aluno.getMentor().getName());
         return alunoDTO;
     }
 
